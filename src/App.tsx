@@ -1,8 +1,13 @@
 import React from 'react';
 import './App.css';
+import { RouteNav } from './routing/RouteNav';
 
-function App() {
-  return <>App</>;
-}
+const App = () => {
+  return (
+    <>
+      <RouteNav />
+    </>
+  );
+};
 
 export default App;
