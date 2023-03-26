@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { useTranslation } from 'react-i18next';
-import Logo from '../../components/Logo';
 
 const StyledWrapper = styled.div`
   text-align: center;
@@ -12,7 +11,6 @@ const HomePage = () => {
 
   return (
     <StyledWrapper>
-      <Logo />
       <h1>{t('myHomePage')}</h1>
     </StyledWrapper>
   );
