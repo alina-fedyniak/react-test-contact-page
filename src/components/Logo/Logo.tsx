@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router';
-import { SvgWrap } from './styled';
+import { SvgWrap } from './LogoStyled';
 import { LogoIcon } from '../../assets/svg';
 
 const Logo = (): JSX.Element => {

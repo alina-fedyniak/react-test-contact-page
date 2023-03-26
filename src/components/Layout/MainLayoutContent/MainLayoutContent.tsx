@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react';
 import { StyledContent } from '../Styles/LayoutStyles';
 import Header from '../Header/Header';
-import Footer from '@/components/Layout/Footer';
+import Footer from '@/components/Layout/Footer/Footer';
 
 interface IMainLayout {
   children: ReactNode;

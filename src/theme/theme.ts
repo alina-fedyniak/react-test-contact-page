@@ -3,9 +3,11 @@ export type HEXColor = string;
 export const COLORS = {
   BLACK: '#000000',
   BLACK_LIGHT: '#1B1B1B',
+  BLACK_LIGHT_2: '#1A1A1A',
   WHITE: '#ffffff',
-  GREY: '#8D8D8D',
-  GREY_LIGHT: '#F5F5F5',
+  GREY_LIGHT: '#8D8D8D',
+  GREY: '#717171',
+  GREY_LIGHT_2: '#F5F5F5',
 };
 
 export const FONT_WEIGHTS = {
