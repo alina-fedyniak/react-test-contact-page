@@ -10,13 +10,16 @@ import {
   StyledCircleLarge,
 } from './ContactInformationStyled';
 import Contacts from '@/components/Contact/Contacts/Contacts';
+import { useTranslation } from 'react-i18next';
 
 const ContactInformation = (): JSX.Element => {
+  const { t } = useTranslation();
+
   return (
     <SvgWrap>
       <div>
-        <StyledTitle>Contact Information</StyledTitle>
-        <StyledText>Say something to start a live chat!</StyledText>
+        <StyledTitle>{t('contactInformation')}</StyledTitle>
+        <StyledText>{t('saySomething')}</StyledText>
       </div>
       <Contacts />
       <StyledSocials>

@@ -1,27 +1,30 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { HeaderMenuStyled } from './styled';
+import { useTranslation } from 'react-i18next';
 
 const HeaderMenu = () => {
+  const { t } = useTranslation();
+
   return (
     <HeaderMenuStyled>
       <Link to={'/'}>
-        <div>Home</div>
+        <div>{t('home')}</div>
       </Link>
       <Link to={'/'}>
-        <div>Features</div>
+        <div>{t('features')}</div>
       </Link>
       <Link to={'/'}>
-        <div>Blog</div>
+        <div>{t('blog')}</div>
       </Link>
       <Link to={'/'}>
-        <div>Shop</div>
+        <div>{t('shop')}</div>
       </Link>
       <Link to={'/'}>
-        <div>About</div>
+        <div>{t('about')}</div>
       </Link>
       <Link to={'/contact'}>
-        <div>Contact</div>
+        <div>{t('contact')}</div>
       </Link>
     </HeaderMenuStyled>
   );

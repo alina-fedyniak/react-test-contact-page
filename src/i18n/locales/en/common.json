@@ -1,4 +1,20 @@
 {
   "contactUs": "Contact Us",
-  "myHomePage": "My Home Page"
+  "myHomePage": "My Home Page",
+  "anyQuestion": "Any question or remarks? Just write us a message!",
+  "firstName": "First Name",
+  "lastName": "Last Name",
+  "email": "Email",
+  "phoneNumber": "Phone Number",
+  "selectSubject": "Select Subject?",
+  "message": "Message",
+  "contactInformation": "Contact Information",
+  "saySomething": "Say something to start a live chat!",
+  "home": "Home",
+  "features": "Features",
+  "blog": "Blog",
+  "shop": "Shop",
+  "about": "About",
+  "contact": "Contact",
+  "generalInquiry": "General Inquiry"
 }
