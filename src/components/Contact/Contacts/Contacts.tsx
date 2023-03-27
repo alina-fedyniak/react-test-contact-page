@@ -1,26 +1,26 @@
 import React from 'react';
-import { SvgWrap, StyledIcon } from './ContactsStyled';
+import { StyledWrap, StyledIcon } from './ContactsStyled';
 import { EmailIcon, LocationIcon, PhoneIcon } from '@/assets/svg';
+import { useTranslation } from 'react-i18next';
 
 const Contacts = (): JSX.Element => {
+  const { t } = useTranslation();
+
   return (
-    <SvgWrap>
+    <StyledWrap>
       <StyledIcon>
         <PhoneIcon />
-        <span>+1012 3456 789</span>
+        <span>{t('number')}</span>
       </StyledIcon>
       <StyledIcon>
         <EmailIcon />
-        <span>demo@gmail.com</span>
+        <span>{t('email')}</span>
       </StyledIcon>
       <StyledIcon>
         <LocationIcon />
-        <span>
-          132 Dartmouth Street Boston, Massachusetts 02156 United States
-        </span>
-        <div></div>
+        <span>{t('132DartmouthStreet')}</span>
       </StyledIcon>
-    </SvgWrap>
+    </StyledWrap>
   );
 };
 

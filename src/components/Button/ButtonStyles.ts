@@ -136,6 +136,6 @@ export const StyledButton = styled(Button)<
 
 
   @media screen and ${DEVICES.LAPTOP_S} {
-    min-width: 12.5rem;
+    min-width: 6.5rem;
   }
 `;

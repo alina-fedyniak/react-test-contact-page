@@ -2,8 +2,10 @@ export type HEXColor = string;
 
 export const COLORS = {
   BLACK: '#000000',
+  BLACK_1: '#131313',
   BLACK_LIGHT: '#1B1B1B',
   BLACK_LIGHT_2: '#1A1A1A',
+  DARK_GREY: '#616161',
   WHITE: '#ffffff',
   GREY_LIGHT: '#8D8D8D',
   GREY: '#717171',

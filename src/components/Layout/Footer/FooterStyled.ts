@@ -5,7 +5,7 @@ export const FooterWrap = styled.div`
   background: ${pickThemeColor('BLACK')};
   color: ${pickThemeColor('WHITE')};
   height: 479px;
-  padding: 20px;
+  padding: 20px 80px 0 100px;
 `;
 
 export const StyledLogo = styled.div`
@@ -13,6 +13,7 @@ export const StyledLogo = styled.div`
   border-bottom: 1px solid ${pickThemeColor('WHITE')};
   display: flex;
   justify-content: center;
+  margin-bottom: 30px;
   svg {
     width: 181px;
     margin: 80px 0 45px 0;

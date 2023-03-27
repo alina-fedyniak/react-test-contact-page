@@ -1,24 +1,27 @@
 import React from 'react';
 import {
-  SvgWrap,
+  StyledWrap,
   StyledTitle,
   StyledText,
   StyledTitleWrap,
 } from './ContactContainerStyled';
 import ContactInformation from '@/components/Contact/ContactInformation/ContactInformation';
+import ContactForm from '@/components/Contact/ContactForm/ContactForm';
+import { useTranslation } from 'react-i18next';
 
 const ContactContainer = (): JSX.Element => {
+  const { t } = useTranslation();
+
   return (
     <>
       <StyledTitleWrap>
-        <StyledTitle>Contact Us</StyledTitle>
-        <StyledText>
-          Any question or remarks? Just write us a message!
-        </StyledText>
+        <StyledTitle>{t('contactUs')}</StyledTitle>
+        <StyledText>{t('anyQuestion')}</StyledText>
       </StyledTitleWrap>
-      <SvgWrap>
+      <StyledWrap>
         <ContactInformation />
-      </SvgWrap>
+        <ContactForm />
+      </StyledWrap>
     </>
   );
 };
