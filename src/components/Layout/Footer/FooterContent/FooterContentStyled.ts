@@ -1,18 +1,25 @@
-import { pickThemeColor, pickThemeFontStyles } from '@/theme';
+import { DEVICES, pickThemeColor, pickThemeFontStyles } from '@/theme';
 import styled from 'styled-components';
 
 export const StyledFormEmailWrap = styled.div`
-  width: 304px;
+  width: 100%;
   height: 184px;
   background: ${pickThemeColor('BLACK_1')};
   border-radius: 10px;
-  padding: 14px 13px 21px 14px;
+  padding: 17px 29px 21px 14px;
+  margin: 0 auto;
   .ant-input {
     background: ${pickThemeColor('BLACK_LIGHT')};
     border: none;
   }
   .ant-input::placeholder {
     color: ${pickThemeColor('DARK_GREY')};
+  }
+
+  @media screen and ${DEVICES.LAPTOP_S} {
+    padding: 14px 13px 21px 14px;
+    width: 304px;
+    margin: 0;
   }
 `;
 
@@ -34,24 +41,42 @@ export const StyledTitleReachUs = styled.div`
 
 export const StyledIcon = styled.div`
   display: flex;
-  align-items: center;
   margin-bottom: 24px;
+  flex-direction: column;
+  align-items: start;
 
   svg {
     font-size: 18px;
-    margin-right: 28px;
+    margin-bottom: 13px;
   }
 
   span {
     ${pickThemeFontStyles('16', '24', 'NORMAL')};
-    max-width: 288px;
+    max-width: 143px;
+
+    @media screen and ${DEVICES.LAPTOP_S} {
+      max-width: 288px;
+    }
+    }
   }
+    @media screen and ${DEVICES.LAPTOP_S} {
+      flex-direction: row;
+      align-items: center;
+      svg {
+        margin-bottom: 0;
+        margin-right: 28px;
+      }
+    }
 `;
 
 export const StyledCompanyBlock = styled.div`
   div {
     margin-bottom: 24px;
     ${pickThemeFontStyles('16', '24', 'NORMAL')};
+  }
+
+  @media screen and ${DEVICES.LAPTOP_S} {
+    margin-right: 60px;
   }
 `;
 
@@ -61,13 +86,21 @@ export const StyledTitleCompany = styled.div`
 
 export const StyledBlockWrap = styled.div`
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+
+  @media screen and ${DEVICES.LAPTOP_S} {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 `;
 
 export const StyledLegalBlock = styled.div`
   div {
     margin-bottom: 24px;
     ${pickThemeFontStyles('16', '24', 'NORMAL')};
+  }
+  @media screen and ${DEVICES.LAPTOP_S} {
+    margin-right: 60px;
   }
 `;
 
@@ -83,5 +116,19 @@ export const StyledQuickLinksBlock = styled.div`
   div {
     margin-bottom: 24px;
     ${pickThemeFontStyles('16', '24', 'NORMAL')};
+  }
+  @media screen and ${DEVICES.LAPTOP_S} {
+    margin-right: 60px;
+  }
+`;
+
+export const StyledContentBlock = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+
+export const StyledReachWrap = styled.div`
+  @media screen and ${DEVICES.LAPTOP_S} {
+    margin-right: 60px;
   }
 `;

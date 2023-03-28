@@ -6,6 +6,7 @@ import {
   StyledInputSecond,
   StyledBtn,
   StyledImg,
+  StyledRadio,
 } from './ContactFormStyled';
 import Button from '@/components/Button/Button';
 import { Form, Input, Radio, RadioChangeEvent, Image } from 'antd';
@@ -26,7 +27,7 @@ const ContactForm = (): JSX.Element => {
 
   return (
     <StyledWrap>
-      <Form form={form} style={{ maxWidth: 600 }} layout="vertical">
+      <Form form={form} layout="vertical">
         <StyledInputsWrap>
           <StyledInputFirst>
             <Form.Item label={t('firstName')}>
@@ -47,10 +48,12 @@ const ContactForm = (): JSX.Element => {
         </StyledInputsWrap>
         <Form.Item label={t('selectSubject')}>
           <Radio.Group onChange={onChange} value={value}>
-            <Radio value={1}>{t('generalInquiry')}</Radio>
-            <Radio value={2}>{t('generalInquiry')}</Radio>
-            <Radio value={3}>{t('generalInquiry')}</Radio>
-            <Radio value={4}>{t('generalInquiry')}</Radio>
+            <StyledRadio>
+              <Radio value={1}>{t('generalInquiry')}</Radio>
+              <Radio value={2}>{t('generalInquiry')}</Radio>
+              <Radio value={3}>{t('generalInquiry')}</Radio>
+              <Radio value={4}>{t('generalInquiry')}</Radio>
+            </StyledRadio>
           </Radio.Group>
         </Form.Item>
         <Form.Item label={t('message')}>
@@ -60,13 +63,13 @@ const ContactForm = (): JSX.Element => {
             placeholder="Write your message.."
           />
         </Form.Item>
+        <StyledBtn>
+          <Button htmlType="submit">Send Message</Button>
+        </StyledBtn>
+        <StyledImg>
+          <Image src={EmailImg} preview={false} />
+        </StyledImg>
       </Form>
-      <StyledBtn>
-        <Button htmlType="submit">Send Message</Button>
-      </StyledBtn>
-      <StyledImg>
-        <Image src={EmailImg} preview={false} />
-      </StyledImg>
     </StyledWrap>
   );
 };

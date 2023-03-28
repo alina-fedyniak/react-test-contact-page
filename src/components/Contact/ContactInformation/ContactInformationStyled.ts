@@ -1,21 +1,29 @@
 import styled from 'styled-components';
-import { pickThemeColor, pickThemeFontStyles } from '@/theme';
+import { DEVICES, pickThemeColor, pickThemeFontStyles } from '@/theme';
 
 export const SvgWrap = styled.div`
   position: relative;
-  padding: 40px 40px 36px 40px;
+  padding: 15px 51px 25px 51px;
   background: ${pickThemeColor('BLACK')};
   color: ${pickThemeColor('WHITE')};
-  width: 491px;
-  height: 647px;
+  max-width: 491px;
+  width: 100%;
+  max-height: 647px;
   box-shadow: 0 0 60px 30px rgba(0, 0, 0, 0.03);
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: initial;
   overflow: hidden;
+  align-items: center;
+
+  @media screen and ${DEVICES.LAPTOP_S} {
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 40px 40px 36px 40px;
+  }
 `;
 
 export const StyledTitle = styled.div`
@@ -24,6 +32,11 @@ export const StyledTitle = styled.div`
 
 export const StyledText = styled.div`
   ${pickThemeFontStyles('18', '26', 'NORMAL')};
+  margin-bottom: 12px;
+
+  @media screen and ${DEVICES.LAPTOP_S} {
+    margin-bottom: 0;
+  }
 `;
 
 export const StyledSocials = styled.div`
@@ -31,24 +44,38 @@ export const StyledSocials = styled.div`
 `;
 
 export const StyledCircleSmall = styled.div`
-  left: 283px;
-  top: 438px;
+  left: 291px;
+  top: 324px;
+  width: 54px;
+  height: 54px;
   background: rgba(72, 72, 72, 0.5);
   position: absolute;
-  width: 138px;
-  height: 138px;
   border-radius: 50%;
   z-index: 1;
+
+  @media screen and ${DEVICES.LAPTOP_S} {
+    left: 283px;
+    top: 438px;
+    width: 138px;
+    height: 138px;
+  }
 `;
 
 export const StyledCircleLarge = styled.div`
   background: ${pickThemeColor('BLACK_LIGHT_2')};
   position: absolute;
-  width: 269px;
-  height: 269px;
-  left: 311px;
-  top: 464px;
+  width: 192px;
+  height: 192px;
+  left: 295px;
+  top: 333px;
   border-radius: 50%;
+
+  @media screen and ${DEVICES.LAPTOP_S} {
+    left: 311px;
+    top: 464px;
+    width: 269px;
+    height: 269px;
+  }
 `;
 
 export const StyledSocialLink = styled.a`

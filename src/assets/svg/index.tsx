@@ -8,3 +8,5 @@ export { ReactComponent as DiscordIcon } from '../svg/discord.svg';
 export { ReactComponent as PhoneIcon } from '../svg/phone.svg';
 export { ReactComponent as EmailIcon } from '../svg/email.svg';
 export { ReactComponent as LocationIcon } from '../svg/location.svg';
+export { ReactComponent as MobileMenuIcon } from '../svg/mobile_menu.svg';
+export { ReactComponent as CloseIcon } from '../svg/close.svg';

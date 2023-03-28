@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { HeaderMenuStyled } from './styled';
 import { useTranslation } from 'react-i18next';
 
-const HeaderMenu = () => {
+const HeaderMenu = (): JSX.Element => {
   const { t } = useTranslation();
 
   return (

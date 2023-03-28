@@ -1,36 +1,27 @@
 import styled from 'styled-components';
 import { DEVICES, pickThemeColor, pickThemeFontStyles } from '@/theme';
 
-export const HeaderWrap = styled.div`
-  display: none;
+export const HeaderMenuStyled = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-right: 60px;
+  a {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    margin-bottom: 30px;
+    color: ${pickThemeColor('WHITE')};
+    ${pickThemeFontStyles('16', '18', 'NORMAL')};
+  }
 
   @media screen and ${DEVICES.LAPTOP_S} {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 40px 0 73.46px 0;
+    a {
+      margin: 0 23.5px;
+    }
   }
 `;
 
 export const StyledIconsWrap = styled.div`
   display: flex;
-`;
-
-export const StyledBlockMenu = styled.div`
-  display: flex;
-  align-items: center;
-`;
-
-export const HeaderMenuStyled = styled.div`
-  display: flex;
-  margin-right: 60px;
-  a {
-    font-family: 'Roboto', sans-serif;
-    text-decoration: none;
-    margin: 0 23.5px;
-    color: ${pickThemeColor('BLACK')};
-    ${pickThemeFontStyles('16', '18', 'NORMAL')};
-  }
 `;
 
 export const StyledIcon = styled.div`
@@ -41,6 +32,7 @@ export const StyledIcon = styled.div`
   display: flex;
   align-items: center;
   margin-right: 36px;
+  color: white;
   svg {
     width: 16px;
     margin: 0 auto;

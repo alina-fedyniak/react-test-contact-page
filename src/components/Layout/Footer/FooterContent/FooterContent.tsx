@@ -12,6 +12,8 @@ import {
   StyledTitleLegal,
   StyledTitleQuickLinks,
   StyledTitleReachUs,
+  StyledContentBlock,
+  StyledReachWrap,
 } from './FooterContentStyled';
 import { useTranslation } from 'react-i18next';
 import { Input, Space } from 'antd';
@@ -23,40 +25,44 @@ const FooterContent = (): JSX.Element => {
 
   return (
     <StyledBlockWrap>
-      <div>
-        <StyledTitleReachUs>{t('reachUs')}</StyledTitleReachUs>
-        <StyledIcon>
-          <PhoneIcon />
-          <span>{t('number')}</span>
-        </StyledIcon>
-        <StyledIcon>
-          <EmailIcon />
-          <span>{t('email')}</span>
-        </StyledIcon>
-        <StyledIcon>
-          <LocationIcon />
-          <span>{t('132DartmouthStreet')}</span>
-        </StyledIcon>
-      </div>
-      <StyledCompanyBlock>
-        <StyledTitleCompany>{t('company')}</StyledTitleCompany>
-        <div>{t('about')}</div>
-        <div>{t('contact')}</div>
-        <div>{t('blog')}</div>
-      </StyledCompanyBlock>
-      <StyledLegalBlock>
-        <StyledTitleLegal>{t('legal')}</StyledTitleLegal>
-        <div>{t('privacyPolicy')}</div>
-        <div>{t('termsServices')}</div>
-        <div>{t('termsOfUse')}</div>
-        <div>{t('refundPolicy')}</div>
-      </StyledLegalBlock>
-      <StyledQuickLinksBlock>
-        <StyledTitleQuickLinks>{t('quickLinks')}</StyledTitleQuickLinks>
-        <div>{t('techlabzKeybox')}</div>
-        <div>{t('downloads')}</div>
-        <div>{t('Forum')}</div>
-      </StyledQuickLinksBlock>
+      <StyledContentBlock>
+        <StyledReachWrap>
+          <StyledTitleReachUs>{t('reachUs')}</StyledTitleReachUs>
+          <StyledIcon>
+            <PhoneIcon />
+            <span>{t('number')}</span>
+          </StyledIcon>
+          <StyledIcon>
+            <EmailIcon />
+            <span>{t('email')}</span>
+          </StyledIcon>
+          <StyledIcon>
+            <LocationIcon />
+            <span>{t('132DartmouthStreet')}</span>
+          </StyledIcon>
+        </StyledReachWrap>
+        <StyledCompanyBlock>
+          <StyledTitleCompany>{t('company')}</StyledTitleCompany>
+          <div>{t('about')}</div>
+          <div>{t('contact')}</div>
+          <div>{t('blog')}</div>
+        </StyledCompanyBlock>
+      </StyledContentBlock>
+      <StyledContentBlock>
+        <StyledLegalBlock>
+          <StyledTitleLegal>{t('legal')}</StyledTitleLegal>
+          <div>{t('privacyPolicy')}</div>
+          <div>{t('termsServices')}</div>
+          <div>{t('termsOfUse')}</div>
+          <div>{t('refundPolicy')}</div>
+        </StyledLegalBlock>
+        <StyledQuickLinksBlock>
+          <StyledTitleQuickLinks>{t('quickLinks')}</StyledTitleQuickLinks>
+          <div>{t('techlabzKeybox')}</div>
+          <div>{t('downloads')}</div>
+          <div>{t('Forum')}</div>
+        </StyledQuickLinksBlock>
+      </StyledContentBlock>
       <StyledFormEmailWrap>
         <StyledTitle>{t('joinOurNewsletter')}</StyledTitle>
         <Space.Compact style={{ width: '100%' }}>

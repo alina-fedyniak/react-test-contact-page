@@ -1,11 +1,17 @@
 import styled from 'styled-components';
-import { pickThemeColor } from '@/theme';
+import { DEVICES, pickThemeColor } from '@/theme';
 
 export const FooterWrap = styled.div`
   background: ${pickThemeColor('BLACK')};
   color: ${pickThemeColor('WHITE')};
-  height: 479px;
-  padding: 20px 80px 0 100px;
+  min-height: 479px;
+  padding: 19px 20px 35px 20px;
+  margin-top: 50px;
+
+  @media screen and ${DEVICES.LAPTOP_S} {
+    margin-top: 0;
+    padding: 20px 80px 42px 100px;
+  }
 `;
 
 export const StyledLogo = styled.div`
@@ -16,6 +22,12 @@ export const StyledLogo = styled.div`
   margin-bottom: 30px;
   svg {
     width: 181px;
-    margin: 80px 0 45px 0;
+    margin: 19px 0 20px 0;
+  }
+
+  @media screen and ${DEVICES.LAPTOP_S} {
+    svg {
+      margin: 80px 0 45px 0;
+    }
   }
 `;
