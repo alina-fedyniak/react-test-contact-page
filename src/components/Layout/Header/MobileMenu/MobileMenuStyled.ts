@@ -22,6 +22,7 @@ export const HeaderMenuStyled = styled.div`
 
 export const StyledIconsWrap = styled.div`
   display: flex;
+  justify-content: center;
 `;
 
 export const StyledIcon = styled.div`
@@ -32,7 +33,6 @@ export const StyledIcon = styled.div`
   display: flex;
   align-items: center;
   margin-right: 36px;
-  color: white;
   svg {
     width: 16px;
     margin: 0 auto;

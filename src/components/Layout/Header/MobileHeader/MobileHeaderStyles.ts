@@ -4,10 +4,8 @@ import { DEVICES, pickThemeColor } from '@/theme';
 export const StyledWrap = styled.div`
   display: block;
 
-  .ant-drawer .ant-drawer-title {
-    svg {
-      width: 91px;
-    }
+  .ant-drawer-header-title {
+    flex-direction: row-reverse;
   }
 
   @media screen and ${DEVICES.LAPTOP_S} {

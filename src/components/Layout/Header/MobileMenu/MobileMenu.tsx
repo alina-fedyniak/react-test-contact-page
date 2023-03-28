@@ -6,7 +6,7 @@ import {
   StyledIconsWrap,
   StyledIcon,
 } from './MobileMenuStyled';
-import { CartIcon, ProfileIcon } from '@/assets/svg';
+import { Cart2Icon, ProfilesIcon } from '@/assets/svg';
 
 const MobileMenu = () => {
   const { t } = useTranslation();
@@ -35,10 +35,10 @@ const MobileMenu = () => {
       </HeaderMenuStyled>
       <StyledIconsWrap>
         <StyledIcon>
-          <ProfileIcon />
+          <ProfilesIcon />
         </StyledIcon>
         <StyledIcon>
-          <CartIcon />
+          <Cart2Icon />
         </StyledIcon>
       </StyledIconsWrap>
     </>

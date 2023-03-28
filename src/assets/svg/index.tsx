@@ -10,3 +10,5 @@ export { ReactComponent as EmailIcon } from '../svg/email.svg';
 export { ReactComponent as LocationIcon } from '../svg/location.svg';
 export { ReactComponent as MobileMenuIcon } from '../svg/mobile_menu.svg';
 export { ReactComponent as CloseIcon } from '../svg/close.svg';
+export { ReactComponent as ProfilesIcon } from '../svg/profiles.svg';
+export { ReactComponent as Cart2Icon } from '../svg/cart2.svg';

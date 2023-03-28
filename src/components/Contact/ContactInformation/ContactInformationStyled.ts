@@ -89,6 +89,7 @@ export const StyledSocialLink = styled.a`
   justify-content: center;
   transition: 0.3s;
   margin-left: 24px;
+  z-index: 1;
   &:hover {
     background-color: ${pickThemeColor('WHITE')};
     path {

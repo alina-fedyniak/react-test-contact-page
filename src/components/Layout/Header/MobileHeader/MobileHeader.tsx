@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { LogoIconWhite, MobileMenuIcon } from '@/assets/svg';
+import { CloseIcon, LogoIconWhite, MobileMenuIcon } from '@/assets/svg';
 import MobileMenu from '../MobileMenu/MobileMenu';
 import { StyledHeader, StyledLogoWrap, StyledWrap } from './MobileHeaderStyles';
 import Logo from '@/components/Logo/Logo';
@@ -32,7 +32,9 @@ const MobileHeader = (): JSX.Element => {
         title={<LogoIconWhite style={{ width: '91px' }} />}
         placement="top"
         onClose={onClose}
+        closeIcon={<CloseIcon />}
         open={open}
+        height="auto"
       >
         <MobileMenu />
       </Drawer>
