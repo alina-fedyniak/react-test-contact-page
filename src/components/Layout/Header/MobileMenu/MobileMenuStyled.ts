@@ -38,3 +38,10 @@ export const StyledIcon = styled.div`
     margin: 0 auto;
   }
 `;
+
+export const StyledFeatures = styled.div`
+  display: flex;
+  svg {
+    margin-left: 5px;
+  }
+`;

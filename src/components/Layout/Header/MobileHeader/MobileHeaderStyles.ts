@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { DEVICES, pickThemeColor } from '@/theme';
+import Drawer from '@/components/Drawer/Drawer';
 
 export const StyledWrap = styled.div`
   display: block;
@@ -13,11 +14,9 @@ export const StyledWrap = styled.div`
   }
 `;
 
-export const StyledCloseBtn = styled.div`
-  svg {
-    position: absolute;
-    right: 25px;
-    top: 25px;
+export const StyledTest = styled(Drawer)`
+  .ant-drawer-header-title {
+    flex-direction: row-reverse;
   }
 `;
 

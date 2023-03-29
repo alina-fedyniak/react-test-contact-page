@@ -4,11 +4,10 @@ import MobileMenu from '../MobileMenu/MobileMenu';
 import {
   StyledHeader,
   StyledLogoWrap,
+  StyledTest,
   StyledWrap,
-  StyledCloseBtn,
 } from './MobileHeaderStyles';
 import Logo from '@/components/Logo/Logo';
-import Drawer from '@/components/Drawer/Drawer';
 
 const MobileHeader = (): JSX.Element => {
   const [open, setOpen] = useState(false);
@@ -29,22 +28,20 @@ const MobileHeader = (): JSX.Element => {
         </StyledLogoWrap>
         <MobileMenuIcon onClick={showDrawer} />
       </StyledHeader>
-      <Drawer
+      <StyledTest
         style={{
           background: 'black',
           color: 'white',
         }}
-        title={<LogoIconWhite style={{ width: '91px', marginLeft: '-21px' }} />}
+        title={<LogoIconWhite style={{ width: '91px' }} />}
         placement="top"
-        closeIcon={false}
+        onClose={onClose}
+        closeIcon={<CloseIcon />}
         open={open}
         height="auto"
       >
-        <StyledCloseBtn>
-          <CloseIcon onClick={onClose} />
-        </StyledCloseBtn>
         <MobileMenu />
-      </Drawer>
+      </StyledTest>
     </StyledWrap>
   );
 };

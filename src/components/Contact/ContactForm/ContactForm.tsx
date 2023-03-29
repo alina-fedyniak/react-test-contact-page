@@ -7,6 +7,8 @@ import {
   StyledBtn,
   StyledImg,
   StyledRadio,
+  StyledFormItem,
+  StyledFormRadio,
 } from './ContactFormStyled';
 import Button from '@/components/Button/Button';
 import { Form, Input, Radio, RadioChangeEvent, Image } from 'antd';
@@ -30,23 +32,23 @@ const ContactForm = (): JSX.Element => {
       <Form form={form} layout="vertical">
         <StyledInputsWrap>
           <StyledInputFirst>
-            <Form.Item label={t('firstName')}>
+            <StyledFormItem label={t('firstName')}>
               <Input bordered={false} />
-            </Form.Item>
-            <Form.Item label={t('lastName')}>
+            </StyledFormItem>
+            <StyledFormItem label={t('lastName')}>
               <Input bordered={false} />
-            </Form.Item>
+            </StyledFormItem>
           </StyledInputFirst>
           <StyledInputSecond>
-            <Form.Item label={t('email')}>
+            <StyledFormItem label={t('email')}>
               <Input bordered={false} />
-            </Form.Item>
-            <Form.Item label={t('phoneNumber')}>
+            </StyledFormItem>
+            <StyledFormItem label={t('phoneNumber')}>
               <Input bordered={false} />
-            </Form.Item>
+            </StyledFormItem>
           </StyledInputSecond>
         </StyledInputsWrap>
-        <Form.Item label={t('selectSubject')}>
+        <StyledFormRadio label={t('selectSubject')}>
           <Radio.Group onChange={onChange} value={value}>
             <StyledRadio>
               <Radio value={1}>{t('generalInquiry')}</Radio>
@@ -55,14 +57,14 @@ const ContactForm = (): JSX.Element => {
               <Radio value={4}>{t('generalInquiry')}</Radio>
             </StyledRadio>
           </Radio.Group>
-        </Form.Item>
-        <Form.Item label={t('message')}>
+        </StyledFormRadio>
+        <StyledFormItem label={t('message')}>
           <TextArea
             bordered={false}
-            rows={2}
+            rows={1}
             placeholder="Write your message.."
           />
-        </Form.Item>
+        </StyledFormItem>
         <StyledBtn>
           <Button htmlType="submit">Send Message</Button>
         </StyledBtn>

@@ -1,5 +1,6 @@
-import { DEVICES, pickThemeColor } from '@/theme';
+import { DEVICES, pickThemeColor, pickThemeFontStyles } from '@/theme';
 import styled from 'styled-components';
+import { Form } from 'antd';
 
 export const StyledWrap = styled.div`
   width: 100%;
@@ -10,6 +11,9 @@ export const StyledWrap = styled.div`
   form input {
     border-bottom: 1px solid ${pickThemeColor('GREY_LIGHT')};
     border-radius: 0;
+    :hover {
+      border-bottom: 1px solid ${pickThemeColor('GREY_LIGHT')};
+    }
     :focus {
       border-bottom: 1px solid ${pickThemeColor('BLACK')};
     }
@@ -19,6 +23,9 @@ export const StyledWrap = styled.div`
     border-bottom: 1px solid ${pickThemeColor('GREY_LIGHT')};
     border-radius: 0;
     padding: 0;
+    :hover {
+      border-bottom: 1px solid ${pickThemeColor('GREY_LIGHT')};
+    }
 
     @media screen and ${DEVICES.LAPTOP_S} {
       margin-bottom: 45px;
@@ -48,6 +55,20 @@ export const StyledInputsWrap = styled.div`
 
 export const StyledInputFirst = styled.div`
   margin-right: 39px;
+`;
+
+export const StyledFormItem = styled(Form.Item)`
+  .ant-form-item-label > label {
+    color: ${pickThemeColor('GREY_LIGHT')};
+    ${pickThemeFontStyles('12', '20', 'NORMAL')};
+  }
+`;
+
+export const StyledFormRadio = styled(Form.Item)`
+  .ant-form-item-label > label {
+    color: ${pickThemeColor('BLACK')};
+    ${pickThemeFontStyles('14', '20', 'SEMI_BOLD')};
+  }
 `;
 
 export const StyledInputSecond = styled.div``;

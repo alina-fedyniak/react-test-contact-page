@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { HeaderMenuStyled } from './styled';
+import { HeaderMenuStyled, StyledFeatures } from './styled';
 import { useTranslation } from 'react-i18next';
+import { DownOutlined } from '@ant-design/icons';
 
 const HeaderMenu = (): JSX.Element => {
   const { t } = useTranslation();
@@ -12,7 +13,10 @@ const HeaderMenu = (): JSX.Element => {
         <div>{t('home')}</div>
       </Link>
       <Link to={'/'}>
-        <div>{t('features')}</div>
+        <StyledFeatures>
+          {t('features')}
+          <DownOutlined />
+        </StyledFeatures>
       </Link>
       <Link to={'/'}>
         <div>{t('blog')}</div>

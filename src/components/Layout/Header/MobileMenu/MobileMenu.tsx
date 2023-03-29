@@ -7,6 +7,8 @@ import {
   StyledIcon,
 } from './MobileMenuStyled';
 import { Cart2Icon, ProfilesIcon } from '@/assets/svg';
+import { DownOutlined } from '@ant-design/icons';
+import { StyledFeatures } from '@/components/Layout/Header/styled';
 
 const MobileMenu = () => {
   const { t } = useTranslation();
@@ -18,7 +20,10 @@ const MobileMenu = () => {
           <div>{t('home')}</div>
         </Link>
         <Link to={'/'}>
-          <div>{t('features')}</div>
+          <StyledFeatures>
+            {t('features')}
+            <DownOutlined />
+          </StyledFeatures>
         </Link>
         <Link to={'/'}>
           <div>{t('blog')}</div>

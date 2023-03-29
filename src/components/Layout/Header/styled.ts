@@ -33,6 +33,14 @@ export const HeaderMenuStyled = styled.div`
   }
 `;
 
+export const StyledFeatures = styled.div`
+  display: flex;
+  svg {
+    margin-left: 5px;
+    color: white;
+  }
+`;
+
 export const StyledIcon = styled.div`
   width: 31px;
   height: 31px;
