@@ -5,10 +5,10 @@ import {
   HeaderMenuStyled,
   StyledIconsWrap,
   StyledIcon,
+  StyledFeatures,
 } from './MobileMenuStyled';
 import { Cart2Icon, ProfilesIcon } from '@/assets/svg';
 import { DownOutlined } from '@ant-design/icons';
-import { StyledFeatures } from '@/components/Layout/Header/styled';
 
 const MobileMenu = () => {
   const { t } = useTranslation();

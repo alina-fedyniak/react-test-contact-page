@@ -25,6 +25,14 @@ export const StyledIconsWrap = styled.div`
   justify-content: center;
 `;
 
+export const StyledFeatures = styled.div`
+  display: flex;
+  svg {
+    margin-left: 5px;
+    color: ${pickThemeColor('WHITE')};
+  }
+`;
+
 export const StyledIcon = styled.div`
   width: 31px;
   height: 31px;
@@ -36,12 +44,5 @@ export const StyledIcon = styled.div`
   svg {
     width: 16px;
     margin: 0 auto;
-  }
-`;
-
-export const StyledFeatures = styled.div`
-  display: flex;
-  svg {
-    margin-left: 5px;
   }
 `;

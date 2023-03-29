@@ -21,6 +21,14 @@ export const StyledBlockMenu = styled.div`
   align-items: center;
 `;
 
+export const StyledFeatures = styled.div`
+  display: flex;
+  svg {
+    margin-left: 5px;
+    color: ${pickThemeColor('BLACK')};
+  }
+`;
+
 export const HeaderMenuStyled = styled.div`
   display: flex;
   margin-right: 60px;
@@ -30,14 +38,6 @@ export const HeaderMenuStyled = styled.div`
     margin: 0 23.5px;
     color: ${pickThemeColor('BLACK')};
     ${pickThemeFontStyles('16', '18', 'NORMAL')};
-  }
-`;
-
-export const StyledFeatures = styled.div`
-  display: flex;
-  svg {
-    margin-left: 5px;
-    color: white;
   }
 `;
 
