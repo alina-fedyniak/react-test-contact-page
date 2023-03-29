@@ -14,7 +14,7 @@ export const StyledWrap = styled.div`
   }
 `;
 
-export const StyledTest = styled(Drawer)`
+export const StyledDriver = styled(Drawer)`
   .ant-drawer-header-title {
     flex-direction: row-reverse;
   }

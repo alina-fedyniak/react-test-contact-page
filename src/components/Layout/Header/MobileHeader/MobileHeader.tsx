@@ -4,7 +4,7 @@ import MobileMenu from '../MobileMenu/MobileMenu';
 import {
   StyledHeader,
   StyledLogoWrap,
-  StyledTest,
+  StyledDriver,
   StyledWrap,
 } from './MobileHeaderStyles';
 import Logo from '@/components/Logo/Logo';
@@ -28,7 +28,7 @@ const MobileHeader = (): JSX.Element => {
         </StyledLogoWrap>
         <MobileMenuIcon onClick={showDrawer} />
       </StyledHeader>
-      <StyledTest
+      <StyledDriver
         style={{
           background: 'black',
           color: 'white',
@@ -41,7 +41,7 @@ const MobileHeader = (): JSX.Element => {
         height="auto"
       >
         <MobileMenu />
-      </StyledTest>
+      </StyledDriver>
     </StyledWrap>
   );
 };
