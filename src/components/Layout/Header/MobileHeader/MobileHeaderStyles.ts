@@ -4,9 +4,9 @@ import { DEVICES, pickThemeColor } from '@/theme';
 export const StyledWrap = styled.div`
   display: block;
 
-  .ant-drawer-header-title {
-    flex-direction: row-reverse;
-  }
+  //.ant-drawer-header-title {
+  //  flex-direction: row-reverse;
+  //}
 
   @media screen and ${DEVICES.LAPTOP_S} {
     display: none;
