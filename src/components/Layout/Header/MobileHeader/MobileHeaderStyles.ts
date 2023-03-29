@@ -13,14 +13,12 @@ export const StyledWrap = styled.div`
   }
 `;
 
-
 export const StyledCloseBtn = styled.div`
   svg {
     position: absolute;
     right: 25px;
     top: 25px;
   }
- 
 `;
 
 export const StyledHeader = styled.div`
