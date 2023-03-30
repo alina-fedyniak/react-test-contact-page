@@ -7,6 +7,7 @@ export const StyledWrap = styled.div`
   margin-top: 30px;
   padding: 0 21px;
   position: relative;
+  overflow: hidden;
 
   form input {
     border-bottom: 1px solid ${pickThemeColor('GREY_LIGHT')};
@@ -93,9 +94,14 @@ export const StyledImg = styled.div`
   position: absolute;
   width: 104.4px;
   height: 52.15px;
-  left: 126.43px;
-  top: 595.81px;
   transform: rotate(355deg);
+  left: 69.43px;
+  top: 625.81px;
+
+  @media screen and ${DEVICES.MOBILE} {
+    left: 103.43px;
+    top: 581.81px;
+  }
 
   @media screen and ${DEVICES.LAPTOP_S} {
     width: 240.79px;

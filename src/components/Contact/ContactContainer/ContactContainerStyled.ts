@@ -9,6 +9,7 @@ export const StyledWrap = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 auto;
 
   @media screen and ${DEVICES.LAPTOP_S} {
     flex-direction: row;

@@ -48,14 +48,23 @@ export const StyledSocials = styled.div`
 `;
 
 export const StyledCircleSmall = styled.div`
-  left: 291px;
-  top: 324px;
+  left: 206px;
+  top: 418px;
   width: 54px;
   height: 54px;
   background: rgba(72, 72, 72, 0.5);
   position: absolute;
   border-radius: 50%;
   z-index: 1;
+  @media screen and ${DEVICES.MOBILE} {
+    left: 245px;
+    top: 407px;
+  }
+
+  @media screen and ${DEVICES.MOBILE_L} {
+    left: 291px;
+    top: 324px;
+  }
 
   @media screen and ${DEVICES.LAPTOP_S} {
     left: 283px;
@@ -70,9 +79,19 @@ export const StyledCircleLarge = styled.div`
   position: absolute;
   width: 192px;
   height: 192px;
-  left: 295px;
-  top: 333px;
+  left: 221px;
+  top: 416px;
   border-radius: 50%;
+
+  @media screen and ${DEVICES.MOBILE} {
+    left: 258px;
+    top: 400px;
+  }
+
+  @media screen and ${DEVICES.MOBILE_L} {
+    left: 295px;
+    top: 333px;
+  }
 
   @media screen and ${DEVICES.LAPTOP_S} {
     left: 311px;
