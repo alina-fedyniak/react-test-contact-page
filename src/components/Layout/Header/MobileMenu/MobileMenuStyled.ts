@@ -40,7 +40,7 @@ export const StyledIcon = styled.div`
   border-radius: 50%;
   display: flex;
   align-items: center;
-  margin-right: 36px;
+  margin: 0 18px;
   svg {
     width: 16px;
     margin: 0 auto;

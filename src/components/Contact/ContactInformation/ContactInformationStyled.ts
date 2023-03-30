@@ -19,6 +19,10 @@ export const SvgWrap = styled.div`
   overflow: hidden;
   align-items: center;
 
+  div {
+    text-align: center;
+  }
+
   @media screen and ${DEVICES.LAPTOP_S} {
     justify-content: space-between;
     align-items: baseline;
@@ -88,12 +92,16 @@ export const StyledSocialLink = styled.a`
   align-items: center;
   justify-content: center;
   transition: 0.3s;
-  margin-left: 24px;
+  margin: 0 12px;
   z-index: 1;
   &:hover {
     background-color: ${pickThemeColor('WHITE')};
     path {
       fill: ${pickThemeColor('BLACK_LIGHT')};
     }
+  }
+
+  @media screen and ${DEVICES.LAPTOP_S} {
+    margin-left: 24px;
   }
 `;

@@ -5,10 +5,6 @@ import Drawer from '@/components/Drawer/Drawer';
 export const StyledWrap = styled.div`
   display: block;
 
-  .ant-drawer-header-title {
-    flex-direction: row-reverse;
-  }
-
   @media screen and ${DEVICES.LAPTOP_S} {
     display: none;
   }
@@ -17,6 +13,11 @@ export const StyledWrap = styled.div`
 export const StyledDriver = styled(Drawer)`
   .ant-drawer-header-title {
     flex-direction: row-reverse;
+
+    .ant-drawer-close {
+      margin-inline-end: 0;
+      padding: 0;
+    }
   }
 `;
 
